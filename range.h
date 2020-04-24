@@ -21,7 +21,7 @@ public:
 
 	bool operator != (const range_iter &other) const
 	{
-		return initial <= curr && curr < other.initial && step > 0 || other.initial < curr && curr <= initial && step < 0;
+		return step > 0 && initial <= curr && curr < other.initial || step < 0 && other.initial < curr && curr <= initial;
 	}
 
 private:
