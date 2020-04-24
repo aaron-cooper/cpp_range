@@ -2,5 +2,5 @@
 test: a.out
 	./test.py
 
-a.out: range.cpp
-	g++ -g range.cpp
+a.out: main.cpp range.h
+	g++ -g main.cpp
