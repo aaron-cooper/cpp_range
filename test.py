@@ -20,6 +20,8 @@ def compProgOut(message, args):
 
 
 compProgOut("testing with only last", "5")
+compProgOut("testing with 0 as only arg", "0")
+compProgOut("testing with single negative arg", "-5")
 compProgOut("testing with first < last", "1 5")
 compProgOut("testing with first = last", "5 5")
 compProgOut("testing with first > last", "15 5")
