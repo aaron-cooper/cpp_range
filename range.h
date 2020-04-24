@@ -39,13 +39,12 @@ public:
 	range(int stop) : range(0, stop, 1) {}
 	range(int start, int stop) : range(start, stop, 1) {}
 	range(int start, int stop, int step) : start(start), stop(stop), step(step)
-    {
-        if (step == 0)
-        {
-            throw std::invalid_argument("invalid argument: step may not be zero.");
-        }
-    }
-
+	{
+		if (step == 0)
+		{
+			throw std::invalid_argument("invalid argument: step may not be zero.");
+		}
+	}
 
 	range_iter begin()
 	{
