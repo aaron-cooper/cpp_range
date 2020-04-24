@@ -52,7 +52,6 @@ private:
 	int start;
 	int stop;
 	int step;
-	bool invalid;
 };
 
 #endif
